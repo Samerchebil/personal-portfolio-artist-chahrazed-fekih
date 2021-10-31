@@ -1,0 +1,80 @@
+<html>
+<head>
+    <link href="style-form.css" rel="stylesheet" type="text/css">
+    <title>AdamsandAbigal</title>
+    </head>
+    <script src="jquery.js"></script>
+    <script>
+    $(function(){
+        $('.u_menu li').eq(2).hide();
+        $('.left').addClass('left_slide');
+        
+         $('.u_menu li').eq(1).on('click',function(){
+               $('.u_menu li').eq(2).slideToggle(1000);
+             
+         });
+        $('.mnu').on('click',function(){
+            $(this).toggleClass('rotate');
+           $('.left').toggleClass('left_slide');
+        })
+        
+        
+        
+    })
+    </script>
+    
+    
+    
+    <body>
+   
+         
+             
+            <div class="mid-wrapper">
+                <div class="slide">
+                  
+              <form method="get" action="cart-form.php">
+                    <h2>AdamsandAbigals</h2>
+                    <ul><li>Cart ></li><li>Customer Information ></li>
+                        <li>Shipping Method ></li><li>Payment Method ></li></ul>
+              <h3 style="margin-top:20px;">Contact Information</h3>
+                  <input type="text" class="longtxt" name="fmail" placeholder="Email">
+              <h3>Shipping address</h3><br>
+                  
+                  <input type="text" class="mediumtxt" name="fname" placeholder="First Name">
+                   <input type="text" class="mediumtxt" name="lname" placeholder="Last Name">
+                  <input type="text" class="longtxt" name="address" placeholder="Address">
+                  <input type="text" class="longtxt" name="city" placeholder="City">
+                  <br>
+                  <select class="sel" name="country"><option value="india">India</option></select>
+                 <select class="sel" name="state"><option value="maharashtra">Maharashtra</option></select>
+                    <input type="text" class="shorttxt" name="pin" placeholder="Pin">
+                  <br><a href="index.html">>Return To Cart</a>
+                  <input type="submit" value="Place Your Order">
+                    </form>
+                    
+                    
+                </div>
+                <div class="info">
+              <div class="content">
+                    <img src="cruzar1.jpg"><p>The Classic</p><h3>$120</h3>
+                    </div>
+             <div class="biling">
+                    <table>
+                  <tr><td>Subtotal</td><td>$120</td> </tr>
+                        <tr><td>Shipping</td><td>$20</td> </tr>
+                 </table>
+                    
+                    </div>
+                    <div class="total">
+                    <table>
+                        <tr><td>Total</td><td>$140</td> </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+                </div>
+
+      
+        
+    </body>
+</html>

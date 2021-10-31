@@ -1,0 +1,143 @@
+﻿<html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>AdamsandAbigal</title>
+    </head>
+    <script src="jquery.js"></script>
+    <script>
+    $(function(){
+        $('.u_menu li').eq(2).hide();
+        $('.left').addClass('left_slide');
+        
+         $('.u_menu li').eq(1).on('click',function(){
+               $('.u_menu li').eq(2).slideToggle(100);
+             
+         });
+        $('.mnu').on('click',function(){
+            $(this).toggleClass('rotate');
+           $('.left').toggleClass('left_slide');
+            
+        });
+        
+        $(window).scroll(function(){
+            if($(document).scrollTop()>100)
+              $('.topBar').hide().slideUp(1000);
+            else
+                 $('.topBar').show().slideDown(1000);
+            
+        });
+        
+    })
+    </script>
+    
+    <style>
+        .o123{
+            display:none;
+        }
+    
+    </style>
+    
+    
+    <body>
+   
+        
+            <div class="left"> 
+             <div class="topBar">
+                <div class="logo"></div>
+                <div class="topMenu">
+                   <div class="mnu"></div>
+        
+                 </div>
+                 
+             </div>
+            <div class="mid-wrapper">
+                <div class="slide">
+                <img src="cruzar1.jpg" width="100%">
+                    <img src="cruzar2.jpg" width="100%">
+                      <img src="cruzar3.jpg" width="100%">
+                </div>
+                <div class="info">
+                    <div class="info-wrapper">
+                <h1>The Classic</h1>
+                    <p style="color:#838686; font-family: cursive;font-size: 80%;">By AdamsandAbigal</p>
+                    <br>
+                    <br>
+                    <p style="font-size:150%;font-family:sans-serif; margin-bottom:60px;">$120</p>
+                    <form style="margin-bottom:50px" action="cart.html">
+                    <input type="number"><a href="cart.html"><input type="Submit" Value="Add To Cart"></a>
+                        </form>
+                        <p style="margin-bottom: 60px;">Made To Be ridden But Worthy Of hanging On your wall<br>
+                           The Classic is built in Downtown LosAngeles
+                        </p>
+                    <ul style="list-style: circle">
+                        <li>Length: 24" | Width Under Front Foot: 6.5" | Width Under Back Foot: 5"</li>
+                        <li>Wheels: 60MM 78A</li>
+                        <li>Bearings: Abec - 7</li>
+                        <li>Trucks: Silver 3"</li>
+                        <li>Roll On Grip tape</li>
+                        <li style="margin-bottom: 50px;">Risers: 1/4" black</li>
+                            
+                        
+                        </ul>    
+                    </div>
+                </div>
+                </div>
+
+                
+            <div class="bottom-wrapper">
+                <div class="botleft">
+                    <h1>
+                    @AdamsandAbigal
+                    </h1>
+                <form class="sign-form">
+                   <p class="first">Get On Board With Us</p>
+                    <input type="text" id="email" name="enail"> 
+                    <input type="submit" id="signup" value="SIGN UP">
+                    <p>Join our mailing list to stay up to date with<br> all things AdamsandAbigal</p>
+                    </form>
+                    <p class="copyright">Copyright © 2018 AdamsandAbigal</p>
+                
+                </div>
+                <div class="botright">
+                <div class="Contact"><p style="color:#c5c7c7; font-size: 120%; font-family: Loius; margin-bottom: 10%;">Contact Information</p>
+                    <h1>AdamsandAbigal@gmail.com</h1>
+                <p>Get In Touch <br>
+                    We will respond to your mails within one day
+                    </p>
+                    </div>
+                <div class="submenus">
+                    <ul>
+                    <li><a href="pages/About%20Us.html">About Us</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="pages/Shipping.html">Shipping</a></li>
+                    </ul>
+                    </div>    
+                </div>
+                </div>    
+        </div>
+        <div class="right"> 
+            <div class="rightlist">
+            <ul class="u_menu">
+            <li><a class="a_menu" href="#">Home</a></li>
+            <li><a class="a_menu shop" href="#">Shop</a></li>    
+                <li>
+                <ul class="inneru"><li><a class="a_menu" href="#">Men</a></li>
+                    <li><a class="a_menu" href="#">Women</a></li>
+                    <li><a class="a_menu" href="#">Accessories</a></li></ul>
+                </li>
+                <li><a class="a_menu" href="#">Cart</a></li>
+                <li><a class="a_menu" href="#">Contact</a></li>
+                <li><a class="a_menu" href="#">About</a></li>
+            
+            </ul>
+                </div>
+        </div>
+     
+     
+        
+        
+      
+        
+        
+    </body>
+</html>

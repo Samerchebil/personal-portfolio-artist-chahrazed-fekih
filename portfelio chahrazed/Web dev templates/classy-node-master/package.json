@@ -1,0 +1,82 @@
+{
+  "name": "classy-node",
+  "version": "3.2.1",
+  "description": "Classy API wrapper",
+  "scripts": {
+    "lint": "eslint ./src",
+    "test": "mocha --require @babel/register --exit",
+    "coverage": "nyc --require @babel/register --reporter=lcov --reporter=text-summary mocha --exit",
+    "snyk-test": "./node_modules/.bin/snyk test",
+    "snyk-unpublished": "./node_modules/.bin/snyk test-unpublished",
+    "snyk-protect": "./node_modules/.bin/snyk protect",
+    "prepublish": "yarn lint && yarn build && yarn docs",
+    "build": "./node_modules/.bin/gulp",
+    "snyk-wizard": "node ./node_modules/.bin/snyk wizard",
+    "docs": "cp README.md ./docs && babel-node scripts/docs.js"
+  },
+  "keywords": [
+    "classy",
+    "classy.org",
+    "api",
+    "nonprofits",
+    "donations",
+    "fundraising"
+  ],
+  "homepage": "https://github.com/classy-org/classy-node",
+  "author": "Classy, Inc. <support@classy.org> (https://classy.org)",
+  "contributors": [
+    "Matt Lingner <mlingner@gmail.com> (http://mattlingner.com)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/classy-org/classy-node.git"
+  },
+  "bugs": "https://github.com/classy-org/classy-node/issues",
+  "main": "dist/Classy/main.js",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "pluralize": "^8.0.0",
+    "request": "^2.74.0",
+    "request-debug": "^0.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "@bugsnag/js": "^6.4.3",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-istanbul": "^5.2.0",
+    "chai": "^4.2.0",
+    "colors": "^1.1.2",
+    "coveralls": "^3.0.6",
+    "del": "^5.1.0",
+    "docsify-cli": "^4.3.0",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "fs.promises": "^0.1.2",
+    "gulp": "^4.0.2",
+    "gulp-add-src": "^1.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-mocha": "^7.0.1",
+    "handlebars": "^4.2.0",
+    "jshint": "^2.9.1",
+    "lolex": "^4.2.0",
+    "mocha": "^6.2.0",
+    "nock": "^11.3.1",
+    "nyc": "^14.1.1",
+    "sinon": "^7.4.2",
+    "sinon-chai": "^3.3.0",
+    "snyk": "^1.15.0",
+    "strip-indent": "^3.0.0",
+    "v8flags": "^3.1.3"
+  }
+}

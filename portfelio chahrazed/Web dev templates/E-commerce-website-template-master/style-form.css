@@ -1,0 +1,193 @@
+html , body {
+    margin: 0;
+    padding: 0;
+    
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+/*                                    Wrapper code                      */
+
+.mid-wrapper{
+     width:100%;
+    height:100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: Champ;
+    margin: 0;
+    overflow:hidden;
+}
+
+.slide h2,h3{
+    margin:10px;
+    color:#333333;
+    font-family:Loius;
+}
+.slide h2{
+    font-size:200%;
+    font-family: Champ;
+}
+.slide{
+    height:760px;;
+   overflow-x: auto;
+   
+    margin-bottom: 0;
+    margin-top: 0px;
+}
+.slide form{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 30px;
+}
+.slide li{
+    display:inline-block;
+    margin: 5px;
+    color:#252a31;
+}
+.slide h3{
+    font-size:130%;
+    font-family:Champ;
+}
+
+
+.slide select{
+    margin: 10px;
+    width:20%;
+    padding:8px;
+    font-size:100%;
+    font-family:Loius;
+
+}
+.shorttxt{
+    width:32%;
+    padding:8px;
+    font-size:120%;
+}
+.mediumtxt{
+    width: 43%;
+     padding:8px;
+    font-size:120%;
+}
+.longtxt{
+    width: 90%;
+    padding:8px;
+    font-size:120%;
+}
+.slide input{
+    margin: 10px;
+    padding:10px;
+    font-size: 90%;
+    font-family:Loius;
+    border:solid 1px #d9d9d9;
+    border-radius:5px;
+    outline: none;
+}
+.slide input:active{
+    border:solid 1px #66cda7;
+}
+.slide input:focus{
+     border:solid 2px #66cda7;
+    transform:scale(1.01);
+}
+.slide form a,.slide form input[type="submit"]{
+    margin-top:30px;
+}
+.slide form input[type="submit"]{
+    margin-left:50%;
+    background-color:#66cda7;
+    color:white;
+}
+.info{
+    background-color:#fafafa;
+    border-left:solid 1px #d9d9d9;;
+}
+.content{
+    margin:0 auto;
+    margin-top:50px;
+    border-bottom:solid 1px #d9d9d9; 
+    width: 80%;
+     
+}
+.content img,p,h3{
+    display: inline-block;
+    margin: 20px;
+}
+.content img{
+    width: 70px;
+    height:70px;
+  
+}
+.content p{
+    transform:translateY(-50px);
+    font-family:Loius;
+    }
+.content h3{
+    transform:translateY(-50px);
+    font-family:Loius;
+    margin-left:40%;
+    }
+.biling,.total{
+     margin:0 auto;
+    font-family:Loius;
+    border-bottom:solid 1px #d9d9d9; 
+    width: 80%;
+}
+.biling table, .total table{
+    width:100%;
+    text-align: center;
+    
+}
+.biling tr,.total tr{
+    height:50px;
+}
+.total table{
+    font-size:180%;
+    margin: 10px;
+    font-family: Champ;
+    margin-left:40px;
+    margin-top: 50px;
+}
+.total{
+    border:none;
+}
+@font-face{
+    font-family:"Alta";
+    src: url('Altavista Personal Use.ttf') format('opentype');
+        
+}
+@font-face{
+    font-family:"Champ";
+    font-weight:bold;
+    src: url('Champagne & Limousines Bold.ttf') format('opentype');
+        
+}
+@font-face{
+    font-family:"Caviar";
+    font-weight:bold;
+    src: url('CaviarDreams.ttf') format('opentype');
+        
+}
+@font-face{
+    font-family:"Loius";
+    src: url('Louis George Cafe.ttf') format('opentype');
+        
+}
+@font-face{
+    src: url('NightStillComes_mine_final_sample.ttf') format('opentype');
+        
+}
+@font-face{
+    font-family:"Blacklist";
+    src: url('The Blacklist.ttf') format('opentype');
+        
+}
+@font-face{
+    font-family:"Timeless";
+    src: url('Timeless.ttf') format('opentype');
+        
+}

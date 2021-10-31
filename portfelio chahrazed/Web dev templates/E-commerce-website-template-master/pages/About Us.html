@@ -1,0 +1,106 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>AdamsandAbigal</title>
+    </head>
+    <script src="jquery.js"></script>
+    <script>
+    $(function(){
+        $('.u_menu li').eq(2).hide();
+        $('.left').addClass('left_slide');
+        
+         $('.u_menu li').eq(1).on('click',function(){
+               $('.u_menu li').eq(2).slideToggle(1000);
+             
+         });
+        $('.mnu').on('click',function(){
+            $(this).toggleClass('rotate');
+           $('.left').toggleClass('left_slide');
+        })
+        
+        
+        
+    })
+    </script>
+    
+    
+    
+    <body>
+   
+        
+            <div class="left"> 
+             <div class="topBar">
+                <div class="logo"></div>
+                <div class="topMenu">
+                   <div class="mnu"></div>
+        
+                 </div>
+                 
+             </div>
+            <div class="mid-wrapper">
+                <div class="slide">
+               <h1>About Us</h1>
+                </div>
+                <div class="info">
+                <p>AdamsandAbigal is a skateboard company based out of Downtown Los Angeles. At the moment we make one board: The Classic. </p>
+                </div>
+                </div>
+
+                
+            <div class="bottom-wrapper">
+                <div class="botleft">
+                    <h1>
+                    @AdamsandAbigal
+                    </h1>
+                <form class="sign-form">
+                   <p class="first">Get On Board With Us</p>
+                    <input type="text" id="email" name="enail"> 
+                    <input type="submit" id="signup" value="SIGN UP">
+                    <p>Join our mailing list to stay up to date with<br> all things AdamsandAbigal</p>
+                    </form>
+                    <p class="copyright">Copyright © 2018 AdamsandAbigal</p>
+                
+                </div>
+                <div class="botright">
+                <div class="Contact"><p style="color:#c5c7c7; font-size: 120%; font-family: Loius; margin-bottom: 10%;">Contact Information</p>
+                    <h1>AdamsandAbigal@gmail.com</h1>
+                <p>Get In Touch <br>
+                    We will respond to your mails within one day
+                    </p>
+                    </div>
+                <div class="submenus">
+                    <ul>
+                    <li><a href="About%20Us.html">About Us</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="Shipping.html">Shipping</a></li>
+                    </ul>
+                    </div>    
+                </div>
+                </div>    
+        </div>
+        <div class="right">
+            <div class="rightlist">
+            <ul class="u_menu">
+            <li><a class="a_menu" href="#">Home</a></li>
+            <li><a class="a_menu shop" href="#">Shop</a></li>    
+                <li>
+                <ul class="inneru"><li><a class="a_menu" href="#">Men</a></li>
+                    <li><a class="a_menu" href="#">Women</a></li>
+                    <li><a class="a_menu" href="#">Accessories</a></li></ul>
+                </li>
+                <li><a class="a_menu" href="#">Cart</a></li>
+                <li><a class="a_menu" href="#">Contact</a></li>
+                <li><a class="a_menu" href="#">About</a></li>
+            
+            </ul>
+                </div>
+        </div>
+     
+     
+        
+        
+      
+        
+        
+    </body>
+</html>

@@ -1,0 +1,306 @@
+html , body {
+    margin: 0;
+    padding: 0;
+    
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+/*                                    Wrapper code                      */
+.left{
+    width:80%;
+    height: 100%;
+   
+    display: inline-grid;
+     transition: 2s;
+}
+.left_slide{
+    width:100%;
+    height:100%;
+    transition: 2s;
+}
+
+.right{
+    width: 20%;
+    height: 100%;
+    background-color: #32322C;
+     display: inline-grid;
+    position: fixed;
+   overflow:auto;
+}
+.right a{
+    margin: 30px;
+    margin-left: -10px;
+    color: white;
+    margin-bottom: 20px;
+   font-size: 150%;
+    font-family: Loius
+}
+
+.rightlist{
+    margin-top:0px;
+}
+.right ul li{
+     padding: 30px;
+}
+.inneru li{
+    padding:5px;
+}
+.inneru a{
+    margin: 10px;
+    padding: 10px;
+    margin-left: -50px;
+    font-size: 120%;
+}
+
+.topBar{
+    
+    width: 100%;
+    height: 120px;
+   
+    background-color: white;
+    box-shadow: 0px 0px 2px #999 ;
+    
+}
+.logo{
+    width: 200px;
+    height: 80px;
+    margin-top:10px;
+    margin-left: 10px;
+   background-image: url(logo.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+     transition:1s;
+}
+.rotate{
+    transform:rotate(90deg);
+    transition:1s;
+}
+
+.topMenu{
+    float: right;
+   
+
+}
+.mnu{
+    width: 50px;
+    height: 50px;
+       background-image: url(menu.jpeg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    margin-top: -65px;
+    margin-right: 20px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.top-wrapper{
+    width:100%;
+    height: 600px;
+   background-image: url("top-wrapper.jpeg");
+    background-size: 100%;
+    
+}
+.txt-wrapper {
+    
+    left:80%;
+    top: 70%;
+   position: relative;
+    
+}
+.txt-wrapper a{
+    font-family: Loius;
+    font-size: 150%;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    color: white;
+    background-color: rgba(0,0,0,.6);
+}
+.txt-wrapper a:hover{
+    background-color:rgba(0,0,0,0);
+    
+    border:2px solid white;
+}
+.bottom-wrapper{
+    font-family: Champ;
+    color: white;
+    
+    width:100%;
+    margin-top:0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    background-color:
+#252a2b;
+    
+    
+}
+.botright p{
+      color:#8d9090;
+    font-family:Champ;
+    font-size: 110%;
+}
+.botleft h1{
+    margin: 100px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+.contact{
+     margin: 100px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.contact h1{
+   
+}
+.submenus{
+    margin-left:7%;
+}
+.submenus ul li{
+    padding: 10px;
+    
+}
+#email{
+    margin-top: 20px;
+    background-color:#141718;
+    width: 60%;
+    border: none;
+    padding: 7px;
+    font-size: 150%;
+    font-family: Champ;
+    color: white;
+    margin-right: 0;
+    border-radius: 2px;
+    
+}
+#signup{
+   
+    font-family:Champ;
+    background-color:#363d3e;
+    font-size: 100%;
+    border: none;
+   margin-left: 0;
+    border-radius: 2px;
+    padding:12;
+    color: white;
+    position: relative;
+    left: -5px;
+    top:-3px;
+}
+#signup:hover{
+    background-color:#6CD8A0;
+}
+.sign-form{
+    
+    margin: 50px;
+    margin-left: 20%
+}
+.sign-form p{
+    margin-top: 30px;
+    color: #c5c7c7;
+    font-family: Champ;
+}
+.sign-form .first{
+    color:#8d9090;
+    font-family:Champ;
+    font-size: 130%;
+}
+.copyright{
+     color: #c5c7c7;
+    margin-left:20%;
+    margin-top: 30%;
+}
+
+.mid-wrapper{
+     width:100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: Champ;
+    margin: 0;
+}
+.mid-wrapper img{
+    margin-top:100px;
+}
+.slide{
+    height:660px;;
+   overflow-x: auto;
+    margin-bottom: 0;
+    color:#252a2b;
+
+}
+.slide h1{
+    margin-top: 30%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 500%;
+    font-family:Loius;
+    color:#252a2b;
+}
+.info ul{
+    margin:10%;
+    font-size: 120%;
+    list-style:disc;
+     font-family:Loius;
+    color:#252a2b;
+}
+.info ul li{
+    margin-bottom:20px;
+    
+}
+@font-face{
+    font-family:"Instruction";
+    src: url('Instruction.otf') format('opentype');
+        
+}
+
+
+@font-face{
+    font-family:"Alta";
+    src: url('Altavista Personal Use.ttf') format('opentype');
+        
+}
+@font-face{
+    font-family:"Champ";
+    font-weight:bold;
+    src: url('Champagne & Limousines Bold.ttf') format('opentype');
+        
+}
+@font-face{
+    font-family:"Caviar";
+    font-weight:bold;
+    src: url('CaviarDreams.ttf') format('opentype');
+        
+}
+@font-face{
+    font-family:"Loius";
+    src: url('Louis George Cafe.ttf') format('opentype');
+        
+}
+@font-face{
+    src: url('NightStillComes_mine_final_sample.ttf') format('opentype');
+        
+}
+@font-face{
+    font-family:"Blacklist";
+    src: url('The Blacklist.ttf') format('opentype');
+        
+}
+@font-face{
+    font-family:"Timeless";
+    src: url('Timeless.ttf') format('opentype');
+        
+}c
